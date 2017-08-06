@@ -1,0 +1,18 @@
+{
+  "name": "evalperf",
+  "version": "1.0.0",
+  "description": "Run performance tests on functions with parallel execution.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "performance",
+    "test",
+    "function",
+    "parallel",
+    "addon"
+  ],
+  "author": "Pietro Vismara",
+  "license": "ISC"
+}
