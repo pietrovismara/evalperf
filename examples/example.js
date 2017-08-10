@@ -11,7 +11,7 @@ let points = new Array(100000)
 
 
 parallel()
-.then(() => {
+.then(() => {    
     sequential();
 });
 
@@ -33,7 +33,6 @@ function parallel() {
         modulePath: path.resolve(__dirname, './find-closest-point'),
         args: [refPoint, points]
     })
-    .on('par-cycle', cycleEvents => cycleEvents.report())
     .on('testError', e => console.log(e))
     .start(75)
     .then(results => results.forEach(r => r.report()))
